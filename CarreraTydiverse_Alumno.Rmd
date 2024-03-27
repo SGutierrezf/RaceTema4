@@ -159,7 +159,8 @@ cran_4<-cran %>%
 ```
 6. Elige aquellas descargas realizadas desde España (ES), con versiones de R superiores a la 3.4.0
 ```{r}
-
+cran_4<-cran %>%
+  filter(r_version=="3.4.0",country=="ES")
 ```
 
 7. Elige aquellas descargas realizadas desde España (ES), o Portugal (PT).
